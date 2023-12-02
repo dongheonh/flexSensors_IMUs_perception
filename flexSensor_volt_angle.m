@@ -1,3 +1,6 @@
 function  roll = flexSensor_volt_angle(volts);
-
+    % clibration data from each sensors
+    roll = [(1.719*volts*10^-5)* volts^2 + 0.00019*volts + 0.1659,...
+        (1.719*volts*10^-5)* volts^2 + 0.00019*volts + 0.1659,...
+        (1.719*volts*10^-5)* volts^2 + 0.00019*volts + 0.1659];
 end

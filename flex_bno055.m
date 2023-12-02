@@ -37,8 +37,8 @@ for i = 1: number_IMUs
 end
 
 % data from the flex sensor
-roll_flex = orient_iter_ea(length(orient_iter_ea) - 2: ...
-    length(orient_iter_ea));
+roll_flex = flexSensor_volt_angle(orient_iter_ea(length(orient_iter_ea) - 2 ...
+    : length(orient_iter_ea)));
 
 % obtain the offsets (from IMUs)
 offset_roll  = 90*ones(number_IMUs,1) - roll;
